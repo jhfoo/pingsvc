@@ -1,0 +1,2 @@
+# pingsvc
+REST ping server
