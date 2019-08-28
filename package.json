@@ -1,0 +1,27 @@
+{
+  "name": "pingsvc",
+  "version": "1.0.0",
+  "description": "REST ping server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "supervisor -n exit -- src/server.js config.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhfoo/pingsvc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhfoo/pingsvc/issues"
+  },
+  "homepage": "https://github.com/jhfoo/pingsvc#readme",
+  "devDependencies": {
+    "net-ping": "^1.2.3",
+    "restify": "^8.4.0",
+    "restify-router": "^0.5.1",
+    "supervisor": "^0.12.0"
+  }
+}

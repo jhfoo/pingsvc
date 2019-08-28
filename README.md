@@ -1,2 +1,2 @@
 # pingsvc
-REST ping server
+Node-based REST ping server
