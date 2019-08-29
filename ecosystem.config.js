@@ -1,6 +1,7 @@
 module.exports = {
   apps : [{
     name: "pingsvc",
+    cwd: 'config.json',
     script: "./src/server.js",
     env: {
       NODE_ENV: "development",
