@@ -4,6 +4,7 @@ const fs = require('fs'),
     server = restify.createServer()
 
 const ARG_1 = 2
+console.log('ARG: %s', process.argv[2])
 const Config = JSON.parse(fs.readFileSync(process.argv[ARG_1]))
 
 server.get('/ping/:host', (req, res, next) => {

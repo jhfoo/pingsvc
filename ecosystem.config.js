@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
     name: "pingsvc",
-    cwd: 'config.json',
+    args: 'config.json',
     script: "./src/server.js",
     env: {
       NODE_ENV: "development",
@@ -16,7 +16,6 @@ module.exports = {
       host: ['localhost'],
       repo: 'git@github.com:jhfoo/pingsvc.git',
       ref: 'origin/master',
-      repo: 'git@github.com:jhfoo/pingsvc.git',
       path: '/root/prod/pingsvc',
       'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js --env production'
     }
