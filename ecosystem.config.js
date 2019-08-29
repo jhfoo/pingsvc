@@ -17,7 +17,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:jhfoo/pingsvc.git',
       path: '/root/prod/pingsvc',
-      'post-deploy': 'npm install'
+      'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js --env production'
     }
   }
 }
