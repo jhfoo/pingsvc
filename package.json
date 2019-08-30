@@ -4,7 +4,7 @@
   "description": "REST ping server",
   "main": "index.js",
   "scripts": {
-    "dev": "supervisor -n exit -- src/server.js config.json",
+    "dev": "supervisor -n exit -- src/server.js config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jhfoo/pingsvc#readme",
   "devDependencies": {
+    "foobelt": "^0.1.6",
     "net-ping": "^1.2.3",
     "restify": "^8.4.0",
     "restify-router": "^0.5.1",
