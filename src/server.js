@@ -7,12 +7,17 @@ const fs = require('fs'),
     } = require('foobelt')
 
 const ARG_1 = 2
+<<<<<<< HEAD
 const Config = ConfigReader(process.argv[ARG_1])
 
 // load restify plugins
 server.use(restify.plugins.queryParser({
     mapParams: false
 }));
+=======
+console.log('ARG: %s', process.argv[2])
+const Config = JSON.parse(fs.readFileSync(process.argv[ARG_1]))
+>>>>>>> 4bbb6d4bc25df42122aeff906e0547d9ad47c61b
 
 server.get('/ping/:host', (req, res, next) => {
     let opt = {
