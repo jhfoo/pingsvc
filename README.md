@@ -11,6 +11,8 @@ npm i pingsvc
 // to ping 192.168.0.13 in browser
 // assuming service runs in 192.168.0.32
 http://192.168.0.32:8085/ping/192.168.0.13
+// optional timeout (ms)
+http://192.168.0.32:8085/ping/192.168.0.13?timeout=1000
 ~~~
 
 ### Notes
